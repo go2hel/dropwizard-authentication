@@ -32,7 +32,7 @@ environment.jersey().register(RolesAllowedDynamicFeature.class);
 
 
 
-For user's functionality we have used $@Auth$ from dropwizard-auth. For this to work we have added following line of code,
+For user's functionality we have used @Auth from dropwizard-auth. For this to work we have added following line of code,
 
 
 
@@ -48,7 +48,7 @@ environment.jersey().register(new AuthValueFactoryProvider.Binder<>(User.class))
 
 # Requirements
 
-1. Make table in MySQL consisting of 4 columns $\{id,name,password,role\}$.
+1. Make table in MySQL consisting of 4 columns {id,name,password,role\}​.
 2. Edit the config.properties file according to your database.
 3. Add one entry with role of admin in table.
 
